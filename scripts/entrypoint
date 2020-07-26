@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ "$#" == 0 ]; then
+    # Nginx will fork into background by itself.
+    nginx
+
+    # Foreground php-fpm
+    exec php-fpm
+else
+    "$@"
+fi
