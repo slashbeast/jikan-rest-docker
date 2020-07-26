@@ -1,7 +1,7 @@
 jikan-rest-docker
 =================
 
-Simplified deployment of  `Jikan - Unofficial MyAnimeList.net REST API <https://github.com/jikan-me/jikan-rest>`_ using Docker and docker-compose.
+Simplified deployment of  `Jikan - Unofficial MyAnimeList.net REST API <https://github.com/jikan-me/jikan-rest>`_ using Docker and docker-compose with php-fpm and nginx.
 
 Default configuration
 ---------------------
@@ -15,6 +15,6 @@ Build and deploy::
   docker-compose build
   docker-compose up -d
 
-Then one can use access API under curl http://127.0.0.1:8889/, like::
+Then one can use access API under http://127.0.0.1:8889/, like::
 
   curl http://127.0.0.1:8889/v3/anime/1
