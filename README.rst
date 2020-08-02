@@ -22,6 +22,5 @@ Then one can use access API under http://127.0.0.1:8889/, like::
 To update to latest code, run::
 
   docker-compose build --no-cache
-  docker-compose down -v
   docker-compose up -d
 
