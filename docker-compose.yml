@@ -9,7 +9,7 @@ services:
       - "127.0.0.1:8889:80"
     networks:
       - jikan-rest
-    restart: always
+    #restart: always
     image: jikan-rest
     build:
       context: .
@@ -19,7 +19,7 @@ services:
     image: redis
     networks:
       - jikan-rest
-    restart: always
+    #restart: always
 
 networks:
   jikan-rest:
