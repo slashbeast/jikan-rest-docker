@@ -2,7 +2,7 @@ FROM php:7.3-fpm-alpine3.12 AS builder
 
 RUN \
     adduser -h /app -D -u 1000 app && \
-    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+    curl -sS https://getcomposer.org/installer | php -- --version=1.10.17 --install-dir=/usr/local/bin --filename=composer
 
 WORKDIR /app
 USER app
